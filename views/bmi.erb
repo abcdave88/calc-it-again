@@ -1,0 +1,12 @@
+<form action="/bmi" method="get">
+    <label for="height">HEIGHT</label>
+    <input type ="text" name="height" placeholder="Enter your height in Metres">
+
+    <label for="weight">WEIGHT</label>
+    <input type="text" name="weight" placeholder="Enter you weight in kg">
+    <input type="submit">
+</form>
+
+<% if @result %>
+  <p>Your BMI is <%= @result %></p>
+<% end %>

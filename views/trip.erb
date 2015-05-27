@@ -1,0 +1,15 @@
+<form action="/trip" method="get">
+    <label for="distance">DISTANCE</label>
+    <input type ="text" name="distance" placeholder="Enter the distance">
+    <label for="mpg">MPG</label>
+    <input type="text" name="mpg" placeholder="Enter the MPG">
+    <label for="cost">FUEL PRICE PER GALLON</label>
+    <input type="text" name="cost" placeholder="Enter fuel price per gallon">
+    <label for="speed">SPEED</label>
+    <input type="text" name="speed" placeholder="Enter average speed">    
+    <input type="submit">
+</form>
+
+<% if @length %>
+  <p>Your trip will take you <%= @length %> at a cost of <%= @trip_cost %></p>
+<% end %>
